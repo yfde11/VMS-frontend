@@ -1,0 +1,57 @@
+<div id="main-content" class="col-md-8 col-md-offset-2">
+  <h1>Edit Profile Field</h1>
+  <hr class="hr">
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label for="fieldname" class="col-sm-2 control-label">欄位名稱</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="fieldname" placeholder="本欄位的名字" ng-model="" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="fieldtype" class="col-sm-2 control-label">欄位類別</label>
+      <div class="col-sm-10">
+        <select class="form-control" id="fieldtype" ng-model="" required>
+          <option value="text" selected="selected">text</option>
+          <option value="Longtext">Long text</option>
+          <option value="Number">Number</option>
+          <option value="RadioButton">Radio Button（單選）</option>
+          <option value="Checkbox">Checkbox（多選）</option>
+          <option value="Dropdown">Dropdown（單選）</option>
+          <option value="Date">Date</option>
+          <option value="Time">Time</option>
+          <option value="Weblink">Web link</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="fielddesc" class="col-sm-2 control-label">欄位敘述</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="fielddesc" placeholder="你可以加上對於本欄位的敘述" ng-model="">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="fieldrequired" class="col-sm-2 control-label">欄位是否必須</label>
+      <div class="col-sm-10">
+        <input type="radio" name="fieldrequired" id="fieldrequired" value="true" ng-model="" />是
+        &nbsp;
+        <input type="radio" name="fieldrequired" id="fieldrequired" value="false" ng-model="" />否
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-primary" ng-click="">新增欄位</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!--
+顯示輸入欄位
+填完欄位之後
+click 新增欄位
+新增欄位完成後
+save
+
+ -->

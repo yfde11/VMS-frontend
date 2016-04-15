@@ -102,7 +102,7 @@
                 },
                 views: {
                     /**
-                    @TODO: blank page 
+                    @TODO: blank page
                     */
                     'mainContent@': {
                         templateUrl: 'app/editVolunteerProfile/editVolunteerProfile.html'
@@ -206,6 +206,20 @@
                     'mainContent@': {
                         templateUrl: 'app/volunteerProject/projectDetails.html',
                         controller: 'projectController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('editProfileField', {
+                parent: 'site',
+                url: '/editProfileField',
+                data: {
+                    needAuth: true
+                },
+                views: {
+                    'mainContent@': {
+                        templateUrl: 'app/editProfileField/editProfileField.html',
+                        controller: 'editProfileFieldController',
                         controllerAs: 'vm'
                     }
                 }
